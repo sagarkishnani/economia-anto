@@ -20,6 +20,20 @@ h4 {
   font-size: 16px !important;
 }
 
+input {
+  border-radius: 24px !important;
+  border: none !important;
+  padding: 10px 40px 10px 40px;
+}
+
+input:focus {
+  border: none !important;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
 /* Custom styles */
 .padded-top-sm {
   padding-top: 12px !important;
@@ -38,6 +52,12 @@ h4 {
 }
 .padded-top-3xl {
   padding-top: 60px !important;
+}
+.padded-top-4xl {
+  padding-top: 80px !important;
+}
+.padded-top-5xl {
+  padding-top: 90px !important;
 }
 .padded-bottom-sm {
   padding-bottom: 12px !important;
@@ -153,6 +173,104 @@ h4 {
   cursor: pointer;
 }
 
+/* Acerca de */
+
+.main-acercade {
+  background-image: url("../images/img/girl-pic-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 42rem;
+  border-radius: 20px;
+  margin: 5rem 7rem 0rem 7rem;
+  filter: opacity(0.6);
+  z-index: -1;
+}
+
+.main-title {
+  position: absolute;
+  left: 12rem;
+  top: 32rem;
+  z-index: 99;
+}
+
+.main-title h1 {
+  font-family: var(--titleFont);
+  font-weight: 700;
+  font-size: 65px;
+}
+
+.subtitle-acercade {
+  font-size: 25px;
+  font-family: var(--titleFont);
+  font-weight: 700;
+}
+
+.suscribe-acercade {
+  background-color: var(--pink);
+  padding: 4rem 4rem;
+  height: 20rem;
+}
+
+.text-acercade {
+  max-width: 20rem;
+}
+
+.form-title {
+  font-family: var(--titleFont);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.form-text {
+  color: black !important;
+  max-width: 30rem;
+}
+
+.form-input {
+  width: 100%;
+}
+
+.form-button {
+  display: block;
+  margin: auto;
+  background-color: var(--gray);
+  width: 40%;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  margin-top: 40px;
+}
+
+.form-button:hover {
+  background-color: rgb(113, 113, 113);
+}
+
+.testimonios-acercade {
+  height: 22rem;
+  text-align: center;
+}
+
+.testimonios-acercade h1 {
+  font-family: var(--titleFont);
+  font-weight: 700;
+}
+
+.splide__arrow {
+  background-color: white !important;
+}
+
+.splide__arrow--prev {
+  left: 8em !important;
+}
+
+.splide__arrow--next {
+  right: 8em !important;
+}
+
+.splide__pagination {
+  display: none !important;
+}
 /* Footer */
 footer {
   background-color: black;
@@ -292,6 +410,55 @@ footer {
 
   .dots {
     display: none;
+  }
+
+  /* Acerca de */
+  .main-acercade {
+    background-image: url("../images/img/girl-pic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38rem;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+  }
+
+  .main-title {
+    display: none;
+  }
+
+  .info-acercade {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+
+  .suscribe-acercade {
+    background-color: var(--pink);
+    padding: 4rem 4rem;
+    height: 24rem;
+  }
+
+  .form-title {
+    font-family: var(--titleFont);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .form-text {
+    color: black !important;
+    max-width: 30rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .form-button {
+    width: 60%;
+  }
+
+  .splide {
+    display: none !important;
   }
 
   .footer-logo {

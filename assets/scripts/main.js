@@ -12,6 +12,18 @@ function changeImage() {
   }
 }
 
+function changeIcon() {
+  if (imageDots.src.match("assets/images/icons/dots-menu.svg")) {
+    imageDots.src = "../assets/images/icons/open-dots-menu.svg";
+    document.querySelector(".main-content").style.display = "none";
+    document.querySelector(".main-footer").style.display = "none";
+  } else {
+    document.querySelector(".main-content").style.display = "block";
+    document.querySelector(".main-footer").style.display = "block";
+    imageDots.src = "../assets/images/icons/dots-menu.svg";
+  }
+}
+
 let openBtn = document.querySelector(".openSideNav");
 openBtn.addEventListener("click", () => {
   showNav();
@@ -33,3 +45,13 @@ function hideNav() {
   document.querySelector(".navbar").style.marginRight = "0px";
   document.querySelector(".dots").style.visibility = "visible";
 }
+
+//Splide
+var splide = new Splide(".splide", {
+  type: "loop",
+  perPage: 1,
+});
+splide.mount();
+
+//AOS
+AOS.init();
