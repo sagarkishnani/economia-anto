@@ -49,14 +49,14 @@
 
     <main class="main-content">
         <div class="main-title">
-            <h1 data-aos="fade-right" data-aos-duration="1000">About</h1>
+            <h1 data-aos="fade-right" data-aos-duration="1000">Acerca de</h1>
             <h3 data-aos="fade-right" data-aos-duration="1000">Subtitle web 1</h3>
         </div>
         <div class="main-acercade">
         </div>
         <div class="fluid-container padded-top-2xl padded-bottom-2xl info-acercade">
-            <div class="row justify-content-center">
-                <div class="col-md-3 col-sm-12 padded-top-xl">
+            <div class="row justify-content-center text-info-acercade">
+                <div class="col-md-3 col-lg-3 col-sm-12 padded-top-xl">
                     <h5 class="subtitle-acercade">Headline 5:</h5>
                     <p class="text-acercade">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eveniet
                         facere magni similique
@@ -130,7 +130,7 @@
     <footer class="main-footer">
         <div class="container-fluid padded-top-3xl padded-bottom-3xl">
             <div class="row justify-content-center">
-                <div class="col-sm-1 col-md-4">
+                <div class="col-sm-1 col-md-10 col-lg-4">
                     <div>
                         <img class="footer-logo" src="../assets/images/logo/logo-blanco-lg.png" alt="">
                     </div>
@@ -140,7 +140,7 @@
                     </div>
 
                 </div>
-                <div class="col-sm-1 col-md-5">
+                <div class="col-sm-1 col-md-10 col-lg-5">
                     <h4 class="footer-text">Text web 3</h4>
                     <h2 class="footer-title">In consequat in mi tristique duis nec diam.</h2>
                     <div class="terms-container padded-top-xl padded-bottom-xl">
@@ -171,6 +171,30 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="../assets/scripts/main.js"></script>
+    <script>
+        var splide = new Splide(".splide", {
+            type: "loop",
+            perPage: 1,
+        });
+        splide.mount();
+    </script>
+    <style>
+        .splide__pagination {
+            display: none !important;
+        }
+
+        .splide__arrow {
+            background-color: white !important;
+        }
+
+        .splide__arrow--prev {
+            left: 8em !important;
+        }
+
+        .splide__arrow--next {
+            right: 8em !important;
+        }
+    </style>
 </body>
 
 </html>
