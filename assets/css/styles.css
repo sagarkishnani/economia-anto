@@ -116,6 +116,27 @@ h4 {
   visibility: hidden;
 }
 
+.side-nav-title {
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-bottom: 20px;
+  font-family: var(--titleFont);
+}
+
+.side-nav-content {
+  margin-bottom: 20px;
+}
+
+.side-nav-content img {
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-nav-content img:hover {
+  border-radius: 12px;
+  transform: scale(1.05);
+}
+
 .sideNav {
   height: 100vh;
   width: 0;
@@ -141,6 +162,10 @@ h4 {
 
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.img-side-nav {
+  margin-left: 25px;
 }
 
 .sideNav .closeBtn {
@@ -197,14 +222,6 @@ h4 {
   transform: translate(15px, 0px);
 }
 
-.fondoImg {
-  height: 624px;
-  background-image: url("../images/img/home.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 56px;
-  padding-left: 24px;
-}
 .tituloHome {
   width: 250px;
   height: 280px;
@@ -383,8 +400,8 @@ h4 {
   background: #ffb9de;
 }
 .card img.redesSociales {
-  border-radius: 10px !important;
-  object-fit: cover;
+  border-radius: 12px !important;
+  object-fit: scale-down;
 }
 
 .card-not-display {
@@ -524,6 +541,10 @@ h4 {
   height: 200px !important;
 }
 
+.card-second-line {
+  padding-top: 40px;
+}
+
 .title-publicaciones {
   font-family: var(--titleFont);
   font-weight: 700;
@@ -541,6 +562,18 @@ h4 {
   margin-top: 5rem;
   margin-bottom: 5rem;
   margin-right: 3rem;
+}
+
+/*VIDEOS*/
+.main-videos {
+  background-image: url("../images/img/Anto-wallpaper3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 42rem;
+  border-radius: 20px;
+  margin: 5rem 7rem 0rem 7rem;
+  filter: opacity(0.6);
+  z-index: -1;
 }
 
 /* DETALLE PUBLICACIONES */
@@ -821,6 +854,15 @@ footer {
     display: none;
   }
 
+  .main-index {
+    background-image: url("../images/img/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 34rem;
+    filter: opacity(0.6);
+    z-index: -99;
+  }
+
   .hero-mob {
     display: none;
   }
@@ -895,6 +937,22 @@ footer {
 
   .content-publicaciones {
     margin: 5rem 3rem 0rem 5rem;
+  }
+
+  .main-videos {
+    background-image: url("../images/img/Anto-wallpaper3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38rem;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+  }
+
+  .title-slider-publicaciones {
+    display: none;
+  }
+
+  .slider-detalle {
+    display: none;
   }
 
   .main-contacto {
@@ -1028,6 +1086,15 @@ footer {
     display: block;
   }
 
+  .main-index {
+    background-image: url("../images/img/publicaciones-mob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 34rem;
+    filter: opacity(0.6);
+    z-index: -99;
+  }
+
   .home-cards-titles {
     display: block;
   }
@@ -1092,6 +1159,23 @@ footer {
     display: none;
   }
 
+  /* Publicaciones */
+  .main-videos {
+    background-image: url("../images/img/acercade-mob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38rem;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+  }
+
+  .title-slider-publicaciones {
+    display: none;
+  }
+
+  .slider-detalle {
+    display: none;
+  }
+
   /* Acerca de */
   .main-acercade {
     background-image: url("../images/img/acercade-mob.jpg");
@@ -1112,7 +1196,7 @@ footer {
   .suscribe-acercade {
     background-color: var(--pink);
     padding: 4rem 4rem;
-    height: 24rem;
+    height: 28rem;
   }
 
   .form-title {
