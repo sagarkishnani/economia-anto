@@ -1176,6 +1176,10 @@ footer {
     display: none;
   }
 
+  .link-pub {
+    display: none;
+  }
+
   /* Acerca de */
   .main-acercade {
     background-image: url("../images/img/acercade-mob.jpg");
