@@ -566,7 +566,7 @@ h4 {
 
 /*VIDEOS*/
 .main-videos {
-  background-image: url("../images/img/Anto-wallpaper3.jpg");
+  background-image: url("../images/img/videos.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 42rem;
@@ -1159,9 +1159,9 @@ footer {
     display: none;
   }
 
-  /* Publicaciones */
+  /* Videos */
   .main-videos {
-    background-image: url("../images/img/acercade-mob.jpg");
+    background-image: url("../images/img/videos-mob.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 38rem;
